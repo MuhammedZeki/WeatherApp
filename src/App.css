@@ -1,0 +1,103 @@
+.weatherMain {
+  background-color: #02012c;
+  height: 100vh;
+}
+.container {
+  border: 1px solid #fff;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* header */
+/* Genel Ayarlar ve Container Stil */
+.units-container {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  background-color: #200030; /* Genel arka plan rengi */
+  border: 1px dashed #6f00ff; /* Görseldeki dış çizgi için (isteğe bağlı) */
+}
+
+/* Kart Stili */
+.unit-card {
+  background-color: #2b2b4a; /* Kartın koyu mor arka planı */
+  color: #f0f0f0; /* Beyaz yazı rengi */
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.unit-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Birim Grubu Başlığı (Temperature, Wind Speed vb.) */
+.unit-group h3 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ccc;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Her Birim Seçeneği (km/h, Celsius vb.) */
+.unit-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Seçenekler arası ince çizgi */
+}
+
+/* Son seçeneğin alt çizgisini kaldır */
+.unit-group .unit-option:last-child {
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+
+/* Asıl Input'u Gizle (Radyo Butonu) */
+.unit-option input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Özel İşaretleme Kutusu (Checkmark) Stili */
+.checkmark {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid #555; /* Normal durumda gri çerçeve */
+  border-radius: 50%; /* Yuvarlak yapmak için */
+  display: inline-block;
+  transition: background-color 0.2s, border-color 0.2s;
+  position: relative;
+}
+
+/* Seçili Durumda İşaretleme Stili */
+.unit-option input[type="radio"]:checked ~ .checkmark {
+  border-color: #7d52ff; /* Seçiliyken mor çerçeve */
+  background-color: transparent;
+}
+
+/* Seçili içindeki beyaz nokta */
+.unit-option input[type="radio"]:checked ~ .checkmark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #7d52ff; /* İçindeki mor dolgu */
+}
