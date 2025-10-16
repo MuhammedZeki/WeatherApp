@@ -1,0 +1,94 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.menuBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  gap: 0.625rem;
+  background-color: #262540;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: 1px solid #3c3b5e;
+}
+.menuBar:hover {
+  background-color: #3c3b5e;
+}
+.menuBar p,
+.menuOptions h3,
+.radio-item {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #fff;
+}
+.menuOptions {
+  background-color: #262540;
+  border-radius: 12px;
+  padding: 0.5rem 0.7rem;
+}
+.menuOptions.opened {
+  opacity: 1;
+}
+.menuOptions.closed {
+  opacity: 0;
+  pointer-events: none;
+}
+.menuOptions h3 {
+  line-height: 180%;
+  padding: 0.5rem 0;
+}
+.radio-item input[type="radio"] {
+  display: none;
+}
+.dropdownmenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+.menuOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: absolute;
+  width: 220px;
+  margin-left: -98px;
+  margin-top: 10px;
+  border: 1px solid #3c3b5e;
+  cursor: pointer;
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.menu-items p {
+  color: #acacb7;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+}
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #3c3b5e;
+}
+.radio-item {
+  padding: 0.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.active {
+  background-color: #302f4a;
+  border-radius: 8px;
+}

@@ -1,18 +1,45 @@
-import React from "react";
 import WeatherLogo from "../../assets/images/logo.svg";
+import UnitsImg from "../../assets/images/icon-units.svg";
+import DropDown from "../../assets/images/icon-dropdown.svg";
+import "../../css/Header/HeaderPage.css";
+import { useState } from "react";
+import MenuOptions from "./MenuOptions";
+const initialStateUnits = {
+  temperature: "",
+  speed: "",
+  pre: "",
+};
 const Header = () => {
+  const [units, setUnits] = useState(initialStateUnits);
+
+  const [isUnits, setIsUnnits] = useState(false);
+  const handleUnits = (e) => {
+    e.preventDefault();
+    setIsUnnits(!isUnits);
+  };
+  const handleChangeUnits = (e) => {
+    e.preventDefault();
+    const { value, name } = e.target;
+    if (units[name] !== value) {
+      setUnits({ ...units, [name]: value });
+    }
+  };
   return (
-    <header>
+    <header className="main-header">
       <div className="logo">
         <img src={WeatherLogo} alt="logo" />
       </div>
       <div className="dropdownMenu">
-        <div className="menuBar">
-          <img src="" alt="" />
+        <div className="menuBar" onClick={handleUnits}>
+          <img src={UnitsImg} alt="UnitsImg" />
           <p>Units</p>
-          <img src="" alt="" />
+          <img src={DropDown} alt="DropDown" />
         </div>
-        <div></div>
+        <MenuOptions
+          isUnits={isUnits}
+          units={units}
+          handleChangeUnits={handleChangeUnits}
+        />
       </div>
     </header>
   );
