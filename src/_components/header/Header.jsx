@@ -4,6 +4,7 @@ import DropDown from "../../assets/images/icon-dropdown.svg";
 import "../../css/Header/HeaderPage.css";
 import { useState } from "react";
 import MenuOptions from "./MenuOptions";
+import { Link } from "react-router-dom";
 const initialStateUnits = {
   temperature: "",
   speed: "",
@@ -26,9 +27,9 @@ const Header = () => {
   };
   return (
     <header className="main-header">
-      <div className="logo">
+      <Link to={"/"} className="logo">
         <img src={WeatherLogo} alt="logo" />
-      </div>
+      </Link>
       <div className="dropdownMenu">
         <div className="menuBar" onClick={handleUnits}>
           <img src={UnitsImg} alt="UnitsImg" />

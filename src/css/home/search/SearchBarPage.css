@@ -1,0 +1,59 @@
+.main-search {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+}
+.searchTitle {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  font-size: 3.25rem;
+  line-height: 120%;
+}
+.searchBar,
+.inputBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.searchBar {
+  gap: 1rem;
+}
+.inputBar {
+  background-color: #262540;
+  padding: 0 8rem 0 1rem;
+  border-radius: 12px;
+}
+.inputBar input {
+  border: none;
+  color: #d4d3d9 !important;
+  background-color: transparent;
+  padding: 0.8rem 1.5rem 0.8rem 1rem;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  cursor: pointer;
+  outline: none;
+}
+.inputBar img {
+  height: 20px;
+  width: 20px;
+}
+.searchBtn {
+  color: #fff;
+  background-color: #4658d9;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+}
