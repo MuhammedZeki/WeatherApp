@@ -57,3 +57,37 @@
   padding: 0.8rem 1.5rem;
   border-radius: 12px;
 }
+@media (max-width: 768px) {
+  .searchTitle {
+    width: 482px;
+    text-align: center;
+  }
+  .searchBar {
+    width: 95%;
+    justify-content: space-between;
+  }
+  .inputBar {
+    flex: 1;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .searchTitle {
+    width: 482px;
+    text-align: center;
+  }
+  .searchBar {
+    flex-direction: column;
+  }
+  .searchBtn,
+  .inputBar {
+    width: 100%;
+  }
+  .searchBtn {
+    text-align: center;
+  }
+  .searchTitle {
+    width: 375px;
+    text-align: center;
+  }
+}

@@ -1,10 +1,16 @@
 .weatherMain {
   background-color: #02012c;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 .container {
   width: 90%;
   margin: 0 auto;
   padding: 1rem 0;
   height: 100%;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
 }
