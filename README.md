@@ -13,8 +13,8 @@ A dynamic and responsive weather forecast application built with React.js. It le
 ## 🛠 Tech Stack
 
 * **Frontend:** React.js
-* **State Management:** React Hooks (useState, useEffect, useCallback)
-* **API:** Open-Meteo API (Weather & Geocoding)
+* **State Management:** React Hooks 
+* **API:** Open-Meteo API - Geocoding
 * **Styling:** CSS
 * **HTTP Client:** Axios
 * **Notifications:** react-hot-toast
