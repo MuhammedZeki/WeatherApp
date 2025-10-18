@@ -27,7 +27,7 @@ const Header = () => {
   };
   return (
     <header className="main-header">
-      <Link to={"/"} className="logo">
+      <Link to={"/"} className="logo" data-cy="linkToHome">
         <img src={WeatherLogo} alt="logo" />
       </Link>
       <div className="dropdownMenu">

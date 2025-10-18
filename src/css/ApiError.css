@@ -1,0 +1,44 @@
+.main-error {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.main-error img {
+  width: 42px;
+  height: 42px;
+}
+.error-title {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 800;
+  font-size: 3.25rem;
+}
+.error-inform {
+  color: #d4d3d9;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: #262540;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+.btn img {
+  width: 16px;
+  height: 16px;
+}

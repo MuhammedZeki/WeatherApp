@@ -20,6 +20,40 @@
   flex-direction: column;
   gap: 2rem;
 }
+.weather-info.loading {
+  background: url(none);
+  background-color: #262540;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weather-info.loading .location-info {
+  display: none;
+}
+.weather-info.loading .temperature-container {
+  display: none;
+}
+.loading-content {
+  display: none;
+}
+.weather-info.loading .loading-content {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 1rem;
+}
+.weather-info.loading .loading-content img {
+  width: 40px;
+  height: 40px;
+}
+.weather-info.loading .loading-content p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
 .weather-info {
   background: url("../../assets/images/bg-today-large.svg");
   background-repeat: no-repeat;
@@ -236,7 +270,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-height: 600px;
+  max-height: 770px;
   overflow-y: auto;
   padding-right: 4px;
 }
@@ -314,5 +348,12 @@
   }
   .daily-forecast {
     justify-content: center;
+  }
+  .temperature-container {
+    margin-left: -30px;
+    gap: 0;
+  }
+  .temperature-container span {
+    font-size: 4rem;
   }
 }
