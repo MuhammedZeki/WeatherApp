@@ -1,16 +1,33 @@
-# React + Vite
+A dynamic and responsive weather forecast application built with React.js. It leverages the Open-Meteo API and Geocoding API to fetch and display current, hourly (24-hour filtered), and 7-day daily weather data, including humidity, wind speed, and precipitation details.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## ⚡️ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Real-time Weather Data:** Displays current temperature, location, and weather conditions.
+* **7-Day Daily Forecast:** Provides max/min temperatures and weather codes for the upcoming week.
+* **Performance-Optimized Hourly Filtering:** Dynamically shows the exact 24-hour forecast for the selected day using efficient JavaScript state and date manipulation.
+* **Detailed Information Cards:** Includes Feels Like, Humidity, Wind Speed, and Precipitation.
+* **Search Functionality:** Integrates Geocoding for robust city search.
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React.js
+* **State Management:** React Hooks (useState, useEffect, useCallback)
+* **API:** Open-Meteo API (Weather & Geocoding)
+* **Styling:** CSS
+* **HTTP Client:** Axios
+* **Notifications:** react-hot-toast
 
-## Expanding the ESLint configuration
+## 🚀 Installation and Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone the repository
+git clone [YOUR-REPO-URL]
+cd [YOUR-PROJECT-NAME]
+
+# Install dependencies
+npm install
+
+# Start the project
+npm run dev
