@@ -23,8 +23,8 @@ A dynamic and responsive weather forecast application built with React.js. It le
 
 ```bash
 # Clone the repository
-git clone [YOUR-REPO-URL]
-cd [YOUR-PROJECT-NAME]
+git clone https://github.com/MuhammedZeki/WeatherApp.git
+cd WeatherApp
 
 # Install dependencies
 npm install
